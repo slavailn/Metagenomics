@@ -1,8 +1,9 @@
 # Classification of sequences using CLARK
 
-###*Problem:* classify sequencing reads against a collection of genomes using CLARK
+###Problem:
+	 classify sequencing reads against a collection of genomes using CLARK
 
-###*Alternative tools:*
+###Alternative tools:
 	1) NBC - naive bayessian classification, DNA-DNA http://nbc.ece.drexel.edu/;
         2) KRAKEN - k-mer based, DNA-DNA https://ccb.jhu.edu/software/kraken/;
         3) KrakenUniq - k-mer based classification combined with k-mer cardinality estimation, some useful additional features https://github.com/fbreitwieser/krakenuniq;
@@ -14,33 +15,33 @@
         9) Kaiju - DNA-protein classification tool http://kaiju.binf.ku.dk/;
         10) MetaPhlan2 - classification based in unique marker genes http://huttenhower.sph.harvard.edu/metaphlan2.
 
-###*Useful papers:*
+###Useful papers:
 
-Ye SH, Siddle KJ, Park DJ, Sabeti PC. Benchmarking Metagenomics Tools for Taxonomic Classification. Cell. 2019 Aug 8;178(4):779-794. doi: 10.1016/j.cell.2019.07.010. Review. PubMed PMID: 31398336; PubMed Central PMCID: PMC6716367.
++ Ye SH, Siddle KJ, Park DJ, Sabeti PC. Benchmarking Metagenomics Tools for Taxonomic Classification. Cell. 2019 Aug 8;178(4):779-794. doi: 10.1016/j.cell.2019.07.010. Review. PubMed PMID: 31398336; PubMed Central PMCID: PMC6716367.
 
-McIntyre ABR, Ounit R, Afshinnekoo E, Prill RJ, Hénaff E, Alexander N, Minot SS, Danko D, Foox J, Ahsanuddin S, Tighe S, Hasan NA, Subramanian P, Moffat K, Levy S, Lonardi S, Greenfield N, Colwell RR, Rosen GL, Mason CE. Comprehensive benchmarking and ensemble approaches for metagenomic classifiers. Genome Biol. 2017 Sep 21;18(1):182. doi: 10.1186/s13059-017-1299-7. Erratum in: Genome Biol. 2019 Apr 5;20(1):72. PubMed PMID: 28934964; PubMed Central PMCID: PMC5609029.
++ McIntyre ABR, Ounit R, Afshinnekoo E, Prill RJ, Hénaff E, Alexander N, Minot SS, Danko D, Foox J, Ahsanuddin S, Tighe S, Hasan NA, Subramanian P, Moffat K, Levy S, Lonardi S, Greenfield N, Colwell RR, Rosen GL, Mason CE. Comprehensive benchmarking and ensemble approaches for metagenomic classifiers. Genome Biol. 2017 Sep 21;18(1):182. doi: 10.1186/s13059-017-1299-7. Erratum in: Genome Biol. 2019 Apr 5;20(1):72. PubMed PMID: 28934964; PubMed Central PMCID: PMC5609029.
 
-Velsko IM, Frantz LAF, Herbig A, Larson G, Warinner C. Selection of Appropriate Metagenome Taxonomic Classifiers for Ancient Microbiome Research. mSystems. 2018 Jul 17;3(4). pii: e00080-18. doi: 10.1128/Systems.00080-18. eCollection 2018 Jul-Aug. PubMed PMID: 30035235; PubMed Central PMCID: PMC6050634.
++ Velsko IM, Frantz LAF, Herbig A, Larson G, Warinner C. Selection of Appropriate Metagenome Taxonomic Classifiers for Ancient Microbiome Research. mSystems. 2018 Jul 17;3(4). pii: e00080-18. doi: 10.1128/Systems.00080-18. eCollection 2018 Jul-Aug. PubMed PMID: 30035235; PubMed Central PMCID: PMC6050634.
 
-Thomas AM, Manghi P, Asnicar F, Pasolli E, Armanini F, Zolfo M, Beghini F, Manara S, Karcher N, Pozzi C, Gandini S, Serrano D, Tarallo S, Francavilla A, Gallo G, Trompetto M, Ferrero G, Mizutani S, Shiroma H, Shiba S, Shibata T, Yachida S, Yamada T, Wirbel J, Schrotz-King P, Ulrich CM, Brenner H, Arumugam M, Bork P, Zeller G, Cordero F, Dias-Neto E, Setubal JC, Tett A, Pardini B, Rescigno M, Waldron L, Naccarati A, Segata N. Metagenomic analysis of colorectal cancer datasets identifies cross-cohort microbial diagnostic signatures and a link with choline degradation. Nat Med. 2019 Apr;25(4):667-678. doi: 10.1038/s41591-019-0405-7. Epub 2019 Apr 1. Erratum in: Nat Med. 2019 Dec;25(12):1948. PubMed PMID: 30936548.
++ Thomas AM, Manghi P, Asnicar F, Pasolli E, Armanini F, Zolfo M, Beghini F, Manara S, Karcher N, Pozzi C, Gandini S, Serrano D, Tarallo S, Francavilla A, Gallo G, Trompetto M, Ferrero G, Mizutani S, Shiroma H, Shiba S, Shibata T, Yachida S, Yamada T, Wirbel J, Schrotz-King P, Ulrich CM, Brenner H, Arumugam M, Bork P, Zeller G, Cordero F, Dias-Neto E, Setubal JC, Tett A, Pardini B, Rescigno M, Waldron L, Naccarati A, Segata N. Metagenomic analysis of colorectal cancer datasets identifies cross-cohort microbial diagnostic signatures and a link with choline degradation. Nat Med. 2019 Apr;25(4):667-678. doi: 10.1038/s41591-019-0405-7. Epub 2019 Apr 1. Erratum in: Nat Med. 2019 Dec;25(12):1948. PubMed PMID: 30936548.
 
-Apopa PL, Alley L, Penney RB, Arnaoutakis K, Steliga MA, Jeffus S, Bircan E, Gopalan B, Jin J, Patumcharoenpol P, Jenjaroenpun P, Wongsurawat T, Shah N, Boysen G, Ussery D, Nookaew I, Fagan P, Bebek G, Orloff MS. PARP1 Is Up-Regulated in Non-small Cell Lung Cancer Tissues in the Presence of the Cyanobacterial Toxin Microcystin. Front Microbiol. 2018 Aug 6;9:1757. doi: 10.3389/fmicb.2018.01757. eCollection 2018. PubMed PMID: 30127774; PubMed Central PMCID: PMC6087756.
++ Apopa PL, Alley L, Penney RB, Arnaoutakis K, Steliga MA, Jeffus S, Bircan E, Gopalan B, Jin J, Patumcharoenpol P, Jenjaroenpun P, Wongsurawat T, Shah N, Boysen G, Ussery D, Nookaew I, Fagan P, Bebek G, Orloff MS. PARP1 Is Up-Regulated in Non-small Cell Lung Cancer Tissues in the Presence of the Cyanobacterial Toxin Microcystin. Front Microbiol. 2018 Aug 6;9:1757. doi: 10.3389/fmicb.2018.01757. eCollection 2018. PubMed PMID: 30127774; PubMed Central PMCID: PMC6087756.
 
-Huang D, Su X, Yuan M, Zhang S, He J, Deng Q, Qiu W, Dong H, Cai S. The characterization of lung microbiome in lung cancer patients with different clinicopathology. Am J Cancer Res. 2019 Sep 1;9(9): 047-2063. eCollection 2019. PubMed PMID: 31598405; PubMed Central PMCID: PMC6780665.
++ Huang D, Su X, Yuan M, Zhang S, He J, Deng Q, Qiu W, Dong H, Cai S. The characterization of lung microbiome in lung cancer patients with different clinicopathology. Am J Cancer Res. 2019 Sep 1;9(9): 047-2063. eCollection 2019. PubMed PMID: 31598405; PubMed Central PMCID: PMC6780665.
 
-Jankauskaitė L, Misevičienė V, Vaidelienė L, Kėvalas R. Lower Airway Virology in Health and Disease-From Invaders to Symbionts. Medicina (Kaunas). 2018 Oct 13;54(5). pii: E72. doi: 10.3390/ medicina54050072. Review. PubMed PMID: 30344303; PubMed Central PMCID: PMC6262431.
++ Jankauskaitė L, Misevičienė V, Vaidelienė L, Kėvalas R. Lower Airway Virology in Health and Disease-From Invaders to Symbionts. Medicina (Kaunas). 2018 Oct 13;54(5). pii: E72. doi: 10.3390/ medicina54050072. Review. PubMed PMID: 30344303; PubMed Central PMCID: PMC6262431.
 
-Segal LN, Rom WN, Weiden MD. Lung microbiome for clinicians. New discoveries about bugs in healthy and diseased lungs. Ann Am Thorac Soc. 2014 Jan;11(1):108-16. doi: 10.1513/AnnalsATS.201310-339FR. Review. PubMed PMID: 24460444; PubMed Central PMCID: PMC3972985.
++ Segal LN, Rom WN, Weiden MD. Lung microbiome for clinicians. New discoveries about bugs in healthy and diseased lungs. Ann Am Thorac Soc. 2014 Jan;11(1):108-16. doi: 10.1513/AnnalsATS.201310-339FR. Review. PubMed PMID: 24460444; PubMed Central PMCID: PMC3972985.
 
-Gomes S, Cavadas B, Ferreira JC, Marques PI, Monteiro C, Sucena M, Sousa C, Vaz Rodrigues L, Teixeira G, Pinto P, Tavares de Abreu T, Bárbara C, Semedo J, Mota L, Carvalho AS, Matthiesen R, Pereira L, Seixas S. Profiling of lung microbiota discloses differences in adenocarcinoma and squamous cell carcinoma. Sci Rep. 2019 Sep 6;9(1):12838. doi: 10.1038/s41598-019-49195-w. PubMed PMID: 31492894; PubMed Central PMCID: PMC6731246.
++ Gomes S, Cavadas B, Ferreira JC, Marques PI, Monteiro C, Sucena M, Sousa C, Vaz Rodrigues L, Teixeira G, Pinto P, Tavares de Abreu T, Bárbara C, Semedo J, Mota L, Carvalho AS, Matthiesen R, Pereira L, Seixas S. Profiling of lung microbiota discloses differences in adenocarcinoma and squamous cell carcinoma. Sci Rep. 2019 Sep 6;9(1):12838. doi: 10.1038/s41598-019-49195-w. PubMed PMID: 31492894; PubMed Central PMCID: PMC6731246.
 
 
-###*CLARK materials:*
+###CLARK materials:
 + Paper: https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-1419-2
 + Downloads and documentation: http://clark.cs.ucr.edu/
 
 
-###*CLARK workflow:*
+###CLARK workflow:
 
 CLARK uses k-mer based approach to classify sequencing reads (objects) against a database of genomes or any other sequences of interest (targets).
 
