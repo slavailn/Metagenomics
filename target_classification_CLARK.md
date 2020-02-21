@@ -1,9 +1,9 @@
 # Classification of sequences using CLARK
 
-###Problem:
+### Problem:
 	 classify sequencing reads against a collection of genomes using CLARK
 
-###Alternative tools:
+### Alternative tools:
 	1) NBC - naive bayessian classification, DNA-DNA http://nbc.ece.drexel.edu/;
         2) KRAKEN - k-mer based, DNA-DNA https://ccb.jhu.edu/software/kraken/;
         3) KrakenUniq - k-mer based classification combined with k-mer cardinality estimation, some useful additional features https://github.com/fbreitwieser/krakenuniq;
@@ -15,7 +15,7 @@
         9) Kaiju - DNA-protein classification tool http://kaiju.binf.ku.dk/;
         10) MetaPhlan2 - classification based in unique marker genes http://huttenhower.sph.harvard.edu/metaphlan2.
 
-###Useful papers:
+### Useful papers:
 
 + Ye SH, Siddle KJ, Park DJ, Sabeti PC. Benchmarking Metagenomics Tools for Taxonomic Classification. Cell. 2019 Aug 8;178(4):779-794. doi: 10.1016/j.cell.2019.07.010. Review. PubMed PMID: 31398336; PubMed Central PMCID: PMC6716367.
 
@@ -36,12 +36,12 @@
 + Gomes S, Cavadas B, Ferreira JC, Marques PI, Monteiro C, Sucena M, Sousa C, Vaz Rodrigues L, Teixeira G, Pinto P, Tavares de Abreu T, Bárbara C, Semedo J, Mota L, Carvalho AS, Matthiesen R, Pereira L, Seixas S. Profiling of lung microbiota discloses differences in adenocarcinoma and squamous cell carcinoma. Sci Rep. 2019 Sep 6;9(1):12838. doi: 10.1038/s41598-019-49195-w. PubMed PMID: 31492894; PubMed Central PMCID: PMC6731246.
 
 
-###CLARK materials:
+### CLARK materials:
 + Paper: https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-1419-2
 + Downloads and documentation: http://clark.cs.ucr.edu/
 
 
-###CLARK workflow:
+### CLARK workflow:
 
 CLARK uses k-mer based approach to classify sequencing reads (objects) against a database of genomes or any other sequences of interest (targets).
 
