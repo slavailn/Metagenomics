@@ -112,10 +112,40 @@ K00243:168:H7LCKBBXY:5:1101:6289:1173,200,3483
 ```
 
 Estimate abundances in parallel
-parallel --eta -j 2 '~/programs/CLARKSCV1.2.6.1/estimate_abundance.sh -D <TARGETS_DB> -F {} -a 0 > {.}.abundance.csv' ::: *_result.csv
+parallel --eta -j 2 'CLARKSCV1.2.6.1/estimate_abundance.sh -D <TARGETS_DB> -F {} -a 0 > {.}.abundance.csv' ::: *_result.csv
 
 
 ```
+
+*Short perl script to reformat abundance output files for edgeR input: * 
+
+
+```
+
+#! /usr/bin/perl
+use strict; use warnings;
+
+my $file = shift or die "Please provide abundance file: $!\n";
+
+open(my $my_fh, "<", $file) or die "Cannot open file: $!\n";
+
+while(<$my_fh>)
+{
+    chomp;
+    my @parts = split(',', $_);
+    my $specie = $parts[0];
+    $specie =~ s/ /_/g;
+    my $tax_id = $parts[1];
+    my $lineage = $parts[2];
+    my $count = $parts[3];
+    my $proportion_all = $parts[4];
+    my $proportion_class = $parts[5];
+    print "$specie|$tax_id|$lineage\t$count\t$proportion_all\t$proportion_class\n";
+}
+
+
+```
+
 
 
 
