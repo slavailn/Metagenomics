@@ -116,4 +116,9 @@ parallel 'metaphlan {} --input_type fastq --bowtie2db </path/to/metaphlan_databa
 ```
 
 5) Merge separate profile files into OTU table using the utility script that comes with the software:
+
+```
+
 merge_metaphlan_tables.py *_profile.txt > merged_table.txt
+
+```
