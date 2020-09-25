@@ -3,11 +3,14 @@
 
 <h3>Links:</h3>
 [Github https://github.com/biobakery/MetaPhlAn](https://github.com/biobakery/MetaPhlAn)
+
 [Nature methods paper: Metagenomic microbial community profiling using unique clade-specific marker genes](https://www.nature.com/articles/nmeth.2066)
+
 [Metaphlan workflow at SevenBridges](https://github.com/stevetsa/Metaphlan-SBCGC)
+
 [Guide to software tools for microbial analysis](https://gencore.bio.nyu.edu/beginners-guide-to-bioinformatic-tools-for-analyzing-microbiome-data/)
 
-**1. Metaphlan3 installation**
+**Metaphlan3 installation**
 Start with creating new conda environment:
 
 ```
@@ -29,7 +32,7 @@ conda install -c bioconda metaphlan
 
 ```
 
-**2. Basic usage**
+**Basic usage**
 
 Classify microbiota starting with fastq file:
 
@@ -72,7 +75,7 @@ metaphlan metagenome.fastq --bowtie2out metagenome.bowtie2.bz2 --nproc 5 --input
 
 ```
 
-** 3. Metaphlan analysis of human RNA-seq data (lung tumors)**
+**Metaphlan analysis of human RNA-seq data (lung tumors)**
 
 The analysis starts with HISAT2 bam files.
 
