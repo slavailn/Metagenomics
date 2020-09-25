@@ -2,7 +2,8 @@
 <h3>Workflow template</h3>
 
 <h3>Links:</h3>
-[Github https://github.com/biobakery/MetaPhlAn](https://github.com/biobakery/MetaPhlAn)
+
+[Github MetaPhlAn](https://github.com/biobakery/MetaPhlAn)
 
 [Nature methods paper: Metagenomic microbial community profiling using unique clade-specific marker genes](https://www.nature.com/articles/nmeth.2066)
 
@@ -11,6 +12,7 @@
 [Guide to software tools for microbial analysis](https://gencore.bio.nyu.edu/beginners-guide-to-bioinformatic-tools-for-analyzing-microbiome-data/)
 
 **Metaphlan3 installation**
+
 Start with creating new conda environment:
 
 ```
